@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+
+
+#messages div {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.notice {
+    background-color: #009688;
+    /* Teal */
+}
+
+.error {
+    background-color: #f44336;
+    /* Red */
+}
+
+.alert {
+    background-color: #ff9800;
+    /* Orange */
+}

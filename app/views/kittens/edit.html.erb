@@ -1,0 +1,13 @@
+<h1>Edit Kitten</h1>
+<% if @kitten.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@kitten.errors.count, "error") %> prohibited this kitten from being saved:</h2>
+    <ul>
+      <% @kitten.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+<%= render partial: 'kittens/kitten_form', locals: { kitten: @kitten } %>
+<%= link_to "Back", :back %>
